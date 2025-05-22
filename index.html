@@ -4,39 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Feliz Aniversário meu amor!</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <link rel="stylesheet" href="style/mobile.css" />
-    <script src="javascript/script.js"></script>
   </head>
 
   <body>
     <main>
-      <h2>Tempo Juntos</h2>
+      <h1>Estamos juntos à</h1>
       <div class="fotos">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="24px"
-          viewBox="0 -960 960 960"
-          width="24px"
-          fill="#e3e3e3"
+        <i class="material-symbols-outlined" onclick="imagemAnterior()"
+          >arrow_back</i
         >
-          <path
-            d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"
-          />
-        </svg>
-        <img src="images/foto3.jpeg" alt="" width="200px" />
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="24px"
-          viewBox="0 -960 960 960"
-          width="24px"
-          fill="#e3e3e3"
+        <img
+          id="imagens"
+          alt="fotos"
+        />
+        <i class="material-symbols-outlined" onclick="proximaImagem()"
+          >arrow_forward</i
         >
-          <path
-            d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"
-          />
-        </svg>
       </div>
-      <h2>Tempo Juntos</h2>
+      <p id="contador"></p>
     </main>
   </body>
+  <script src="javascript/script.js"></script>
 </html>
