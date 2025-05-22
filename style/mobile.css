@@ -40,7 +40,7 @@ body{
 
 main{
     background-image: linear-gradient(to bottom, var(--cor4), var(--cor3));
-    width: 80vw;
+    width: 90vw;
     height: 80vh;
     border-radius: 10px;
     display: grid;
@@ -61,6 +61,7 @@ main > div.fotos{
     width: 100%;
     align-items: center;
     justify-content: space-evenly;
+    padding: 0 10px;
 }
 
 main > div.fotos > img{
