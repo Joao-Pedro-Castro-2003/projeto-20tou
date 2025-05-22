@@ -47,8 +47,10 @@ function proximaImagem() {
 
     img.src = imagens[imgAtual + 1];
 
-    img.classList.remove("fade-out");
-  }, 500);
+    setTimeout(function () {
+      img.classList.remove("fade-out");
+    }, 500);
+  }, 200);
 }
 
 function imagemAnterior() {
@@ -64,8 +66,10 @@ function imagemAnterior() {
 
     img.src = imagens[imgAtual - 1];
 
-    img.classList.remove("fade-out");
-  }, 450);
+    setTimeout(function () {
+      img.classList.remove("fade-out");
+    }, 500);
+  }, 200);
 }
 
 function atualizarContador() {
