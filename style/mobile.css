@@ -1,0 +1,53 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Great+Vibes&family=League+Script&display=swap');
+
+/* Typical Device Breakpoints
+-----------------------------
+
+Pequenas telas: até 600px
+Celular: 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, pink, lightblue);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    background-color: white;
+    width: 80vw;
+    height: 90vh;
+    border-radius: 10px;
+    display: grid;
+    grid-template: repeat(3, auto) / 1fr;
+    place-items: center center;
+    place-content: normal normal;
+}
+
+main > div.fotos{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+

@@ -1,0 +1,1 @@
+const inicio = new Date("2021-10-26");
