@@ -1,33 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Feliz Aniversário meu amor!</title>
+    <link rel="stylesheet" href="style/index.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <link rel="stylesheet" href="style/mobile.css" />
   </head>
-
   <body>
     <main>
-      <h1>Estamos juntos à</h1>
-      <div class="fotos">
-        <i class="material-symbols-outlined" onclick="imagemAnterior()"
-          >arrow_back</i
-        >
-        <img
-          id="imagens"
-          alt="fotos"
-        />
-        <i class="material-symbols-outlined" onclick="proximaImagem()"
-          >arrow_forward</i
-        >
-      </div>
-      <p id="contador"></p>
+      <h1>Preencha com seus Dados</h1>
+      <form method="post" autocomplete="on">
+        <p>
+          <input
+            type="text"
+            name="usuario"
+            id="iusuario"
+            placeholder="Digite seu usuário"
+            minlength="3"
+            maxlength="20"
+            required
+            size="20"
+            autocomplete="username"
+          />
+        </p>
+
+        <p>
+          <input
+            type="password"
+            name="senha"
+            id="isenha"
+            placeholder="Digite sua senha"
+            required
+            minlength="8"
+            maxlength="20"
+            size="20"
+            autocomplete="current-password"
+          />
+        </p>
+
+        <p>
+          <input
+            type="text"
+            id="idata"
+            placeholder="Data de Nascimento"
+            onfocus="(this.type='date')"
+            onblur="if(!this.value)this.type='text'"
+          />
+        </p>
+
+        <p>
+          <input type="submit" value="Entrar" onclick="Entrar()"/>
+        </p>
+      </form>
     </main>
   </body>
-  <script src="javascript/script.js"></script>
+  <script src="javascript/index.js"></script>
 </html>

@@ -46,7 +46,8 @@ main{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.401);
 }
 
 main h1{
@@ -66,7 +67,7 @@ main > div.fotos{
 
 main > div.fotos > img{
     border-radius: 10px;
-    transition: opacity 0.4s ease;
+    transition: opacity 0.5s ease;
     opacity: 1;
 }
 
@@ -81,12 +82,28 @@ main > div.fotos > i{
     font-size: 2em;
 }
 
+main > div.fotos > i:hover{
+    background-color: var(--cor1);
+    transition: background-color 0.5s ease;
+    color: var(--cor3);
+    transform: scale(1.2);
+    transition: transform 0.5s ease-out;
+    box-shadow: 0px 0px 10px var(--cor1);
+}
+
 main > p{
     font-family: var(--fontAmor);
     font-size: 1.6em;
     color: var(--cor1);
     text-align: center;
     padding: 10px;
+    padding: 0px;
+}
+
+@media screen and (min-width: 768px) {
+    main{
+        width: 50vw;  
+    }
 }
 
 

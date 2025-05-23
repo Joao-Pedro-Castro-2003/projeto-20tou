@@ -1,32 +1,32 @@
 let intervalo;
 
 let imagens = {
-  1: "images/foto1.jpeg",
-  2: "images/foto2.jpeg",
-  3: "images/foto3.jpeg",
-  4: "images/foto4.jpeg",
-  5: "images/foto5.jpeg",
-  6: "images/foto6.jpeg",
-  7: "images/foto7.jpeg",
-  8: "images/foto8.jpeg",
-  9: "images/foto9.jpeg",
-  10: "images/foto10.jpeg",
-  11: "images/foto11.jpeg",
-  12: "images/foto12.jpeg",
-  13: "images/foto13.jpeg",
-  14: "images/foto14.jpeg",
-  15: "images/foto15.jpeg",
-  16: "images/foto16.jpeg",
-  17: "images/foto17.jpeg",
-  18: "images/foto18.jpeg",
-  19: "images/foto19.jpeg",
-  20: "images/foto20.jpeg",
-  21: "images/foto21.jpeg",
-  22: "images/foto22.jpeg",
-  23: "images/foto23.jpeg",
-  24: "images/foto24.jpeg",
-  25: "images/foto25.jpeg",
-  26: "images/foto26.jpeg",
+  1: "../../images/foto1.jpeg",
+  2: "../../images/foto2.jpeg",
+  3: "../../images/foto3.jpeg",
+  4: "../../images/foto4.jpeg",
+  5: "../../images/foto5.jpeg",
+  6: "../../images/foto6.jpeg",
+  7: "../../images/foto7.jpeg",
+  8: "../../images/foto8.jpeg",
+  9: "../../images/foto9.jpeg",
+  10: "../../images/foto10.jpeg",
+  11: "../../images/foto11.jpeg",
+  12: "../../images/foto12.jpeg",
+  13: "../../images/foto13.jpeg",
+  14: "../../images/foto14.jpeg",
+  15: "../../images/foto15.jpeg",
+  16: "../../images/foto16.jpeg",
+  17: "../../images/foto17.jpeg",
+  18: "../../images/foto18.jpeg",
+  19: "../../images/foto19.jpeg",
+  20: "../../images/foto20.jpeg",
+  21: "../../images/foto21.jpeg",
+  22: "../../images/foto22.jpeg",
+  23: "../../images/foto23.jpeg",
+  24: "../../images/foto24.jpeg",
+  25: "../../images/foto25.jpeg",
+  26: "../../images/foto26.jpeg",
 };
 
 function carregaImagem() {
@@ -47,10 +47,8 @@ function proximaImagem() {
 
     img.src = imagens[imgAtual + 1];
 
-    setTimeout(function () {
-      img.classList.remove("fade-out");
-    }, 500);
-  }, 200);
+    img.classList.remove("fade-out");
+  }, 1000);
 }
 
 function imagemAnterior() {
@@ -66,10 +64,8 @@ function imagemAnterior() {
 
     img.src = imagens[imgAtual - 1];
 
-    setTimeout(function () {
-      img.classList.remove("fade-out");
-    }, 500);
-  }, 200);
+    img.classList.remove("fade-out");
+  }, 1000);
 }
 
 function atualizarContador() {
