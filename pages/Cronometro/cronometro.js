@@ -119,7 +119,7 @@ function atualizarContador() {
   // Atualiza o contador na tela
   document.getElementById(
     "contador"
-  ).innerHTML = `${anos} anos, ${meses} meses, ${dias} dias, ${horas} horas,<br> ${minutos} minutos e ${segundos} segundos.<br> 💖`;
+  ).innerHTML = `${anos} anos, ${meses} meses, ${dias} dias, ${horas} horas,<br> ${minutos} minutos e ${segundos} segundos.<br> 💖<a href="../Carta/carta.html" style="text-decoration: none">📜</a>`;
 }
 
 carregaImagem();

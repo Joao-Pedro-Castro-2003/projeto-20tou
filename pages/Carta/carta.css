@@ -1,0 +1,64 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Great+Vibes&family=League+Script&display=swap');
+
+:root{
+    --cor1: #86A69D;
+    --cor2: #F2B263;
+    --cor3: #F2E8DF;
+    --cor4: #F2C6C2;
+    --cor5: #F28585;
+    --fontAmor: 'Great Vibes', cursive;
+    --fontAmor2: 'Ballet', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--fontAmor);
+}
+
+body{
+    background-image: linear-gradient(to bottom, var(--cor5), var(--cor4));
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 70vw;
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor3));
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.401);
+    padding: 10px;
+    margin: 20px 0px;
+}
+
+main h1{
+    text-align: center;
+    padding: 20px;
+    color: var(--cor1);
+    font-size: 3em;
+}
+
+main p {
+    text-indent: 20px;
+    margin: 20px;
+    line-height: 30px;
+    font-family: var(--fontAmor);
+    font-size: 1.6em;
+    word-spacing: 5px;
+}
+
+p.final{
+    text-align: center;
+}
+
+p.final a{
+    text-decoration: none;
+}
+
+p#assinatura{
+    text-indent: 30px;
+}

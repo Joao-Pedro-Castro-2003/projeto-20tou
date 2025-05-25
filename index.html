@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Feliz Aniversário meu amor!</title>
-    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="index.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -13,7 +13,7 @@
   <body>
     <main>
       <h1>Preencha com seus Dados</h1>
-      <form method="post" autocomplete="on">
+      <form onsubmit="Entrar(event)" autocomplete="on">
         <p>
           <input
             type="text"
@@ -46,6 +46,7 @@
           <input
             type="text"
             id="idata"
+            required
             placeholder="Data de Nascimento"
             onfocus="(this.type='date')"
             onblur="if(!this.value)this.type='text'"
@@ -53,10 +54,10 @@
         </p>
 
         <p>
-          <input type="submit" value="Entrar" onclick="Entrar()"/>
+          <input type="submit" value="Entrar"/>
         </p>
       </form>
     </main>
   </body>
-  <script src="javascript/index.js"></script>
+  <script src="index.js"></script>
 </html>
