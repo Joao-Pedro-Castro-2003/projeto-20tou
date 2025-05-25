@@ -7,7 +7,7 @@ function Entrar(event){
 
     if(usuario == "GatinhaDoJoao" && senha == "AmorDoJoao123" && nascimento == "2005-05-25"){
         alert(`Bem vinda ${usuario} espero que goste do seu presentinho!`);
-        window.location.href = "/pages/Cronometro/cronometro.html";
+        window.location.href = "/projeto-20tou/pages/Cronometro/cronometro.html";
 
         // http://127.0.0.1:5500/pages/Cronometro/cronometro.html
     }else{
