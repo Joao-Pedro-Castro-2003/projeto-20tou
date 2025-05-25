@@ -62,7 +62,7 @@ main > div.fotos{
     width: 100%;
     align-items: center;
     justify-content: space-evenly;
-    padding: 20px;
+    padding: 20px 0px;
 }
 
 main > div.fotos > img{
