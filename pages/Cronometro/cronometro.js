@@ -46,9 +46,9 @@ function proximaImagem() {
     }
 
     img.src = imagens[imgAtual + 1];
-
-    img.classList.remove("fade-out");
   }, 1200);
+
+  img.classList.remove("fade-out");
 }
 
 function imagemAnterior() {
@@ -63,9 +63,8 @@ function imagemAnterior() {
     }
 
     img.src = imagens[imgAtual - 1];
-
-    img.classList.remove("fade-out");
   }, 1200);
+  img.classList.remove("fade-out");
 }
 
 function atualizarContador() {
