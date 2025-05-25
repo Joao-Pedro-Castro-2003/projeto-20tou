@@ -39,6 +39,7 @@ body{
 }
 
 main{
+    width: 90vw;
     background-image: linear-gradient(to bottom, var(--cor4), var(--cor3));
     border-radius: 10px;
     display: flex;
